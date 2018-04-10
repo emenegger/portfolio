@@ -11,7 +11,7 @@ section {
 
 
 #three {
-	height: 1100px;
+	height: 1200px;
 	background-color: black;
 }
 
@@ -262,7 +262,13 @@ p {
 
 /* Projects 2 Sections*/
 .right-figure {
+	left: 0px;
+	opacity: 0;
+}
+
+.right-before {
 	left: 900px;
+	opacity: 1;
 }
 
 .left-figure {
@@ -368,7 +374,7 @@ p {
 
 @media only screen and (max-width: 992px) {
 	#three {
-		height:1300px;
+		height:1350px;
 	}
 
 @media only screen and (max-width: 850px) {
@@ -395,6 +401,18 @@ p {
 	}
 	#two {
 		height: 1200px;
+	}
+	#three {
+		height: 1400px;
+	}
+	.icons img{
+		height:90px;	
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	#three {
+		height: 1700px;
 	}
 }
 
@@ -423,9 +441,14 @@ p {
 	#two {
 		height: 1200px;
 	}
+	#three {
+		height: 1700px;
+	}
 	.icons img{
-		height:100px;
-		width: 100px;
+		height:60px;	
+	}
+	.right-figure {
+		left: 0px;
 	}
 }
 

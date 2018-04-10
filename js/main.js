@@ -53,6 +53,7 @@ $(window).on("scroll touchmove", function() {
     $('body').css('background', $("#four").attr("#FAFAF9"));
     $('a').css('color', "#FFFFFFF");
     $('a').eq(3).css('color', "#FF8932");
+    $('.right-figure').addClass('right-before')
     $('.right-figure').animate ({
       left: '0px'},2000,'easeInOutBack');
     $('.left-figure').animate ({
