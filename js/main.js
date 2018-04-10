@@ -1,15 +1,12 @@
 $(window).on("scroll touchmove", function() {
   const $realPosition2 = $("#two").position().top - 170;
-//  const $iconPosition = $realPosition2.position().top + 400;
   if ($(document).scrollTop() >= $("#one").position().top) {
-//    $('body').css('background', $("#one").attr("data-color"));
     $('a').css('color', "#FFFFFFF");
     $('a').eq(0).css('color', "#4EFE32");
   };
 
   if ($(document).scrollTop() > $realPosition2) {
     console.log("reached second section");
-//    $('body, left-container').css('background', "black");
     $('#left-container').animate({
       left: '20px'},'easeInOutBack');
     $('#right-container').animate({
@@ -39,8 +36,6 @@ $(window).on("scroll touchmove", function() {
 
   const $realPosition3 = $("#three").position().top - 170;
   if ($(document).scrollTop() > $realPosition3) {
-//    $('body').css('background', $("#three").attr("data-color"));
-//    $('h1').css('color', 'black');
     $('body, #pre-three, #three').animate ({
       backgroundColor: 'rgba(0,0,0,0)'},'easeInOutBack');
     $('a').css('color', "#FFFFFFF");
